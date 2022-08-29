@@ -1,0 +1,95 @@
+*{ box-sizing: border-box;
+    /* margin: 0; */
+      /* padding: 0; */
+    }
+    
+body{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-height: 100vh; */
+    
+      /* padding:0; */
+      /* margin:0; */
+      /* width:100%; */
+      height: 150vh;
+      background-image:url(./images/bgimg2.webp);
+      /* z-index: -1; */
+     
+  }
+  .faqaccordion{
+    /* max-width: 800px; */
+  }
+  .faqaccordion .faqcontentBx{
+    position: relative;
+    margin: 10px 20px;
+  }
+  .faqaccordion .faqcontentBx .label{
+    position: relative;
+    padding: 10px;
+    background: rgb(123,123, 196);
+    height: 50px;
+    color: white;
+    cursor: pointer;
+  }
+  .faqaccordion .faqcontentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+  
+  .faqaccordion .faqcontentBx.active .label::before{
+    content: '-';
+  }
+  .faqaccordion .faqcontentBx .faqcontent{
+    position: relative;
+    /* padding: 10px; */
+    background: rgb(145, 173, 209);
+     /* color: white; */
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-Y: auto;
+
+  }
+  .faqaccordion .faqcontentBx .active .faqaccordion{
+    height: 150px; 
+    padding: 10px;
+  }
+  /* hamburger  */
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: .50rem; */
+    height: 30px;
+    width: 30px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(249, 249, 253);
+    border-radius: 5px;
+}
+@media( max-width:800px){
+  .toggle-button{
+      display:flex;
+      width: ;
+  }
+  .media{
+      flex-direction: column;
+      display:none;
+      width: 100%;
+  }
+
+}
+.media .active{
+      display: flex;
+}
+

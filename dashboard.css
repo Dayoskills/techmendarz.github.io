@@ -1,0 +1,328 @@
+*{ box-sizing: border-box;
+    /* margin: 0; */
+      /* padding: 0; */
+    }
+    
+body{
+      padding:0;
+      margin:0;
+      width:100%;
+      height: 90vh;
+      background-image:url(./images/bgimg2.webp);
+      /* z-index: -1; */
+     
+  }
+   
+
+  
+  .navbar{
+    position:fixed;
+    top:-10px;
+    width:100%;
+    height: 113px;
+    background-color:rgba(0, 0, 0, 0.4);
+    display:flex;
+    z-index: ;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    padding:0 20px;
+    margin:0 0px
+
+}
+.brand{
+    /* position:absolute; */
+    margin:.7rem;
+    
+   
+    
+}
+.navbar ul{
+    margin:0;
+    padding:0  0;
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    /* margin:0px 10px; */
+    padding: 1rem;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(87, 177, 99);
+    border-radius: 10px;
+    background-color: rgb(87, 177, 99);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .dropdown:hover{
+    color: rgb(123, 123, 196);
+    background-color: rgb(87, 177, 99);
+    border-radius: ;
+  }
+  .drop-content, .drop-content2 {
+    display: none;
+    position: absolute;
+    /* background-color: #4450ad; */
+    /* background-image: url(./images/bgimg2.webp); */
+    min-width: 120px;
+    font-size: 16px;
+    top: 34px;
+    z-index: 1;
+    /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4); */
+  }
+  /* on hover show dropdown */
+  .dropdown:hover .drop-content, .dropdown2:hover .drop-content2 {
+    display: block;
+  }
+  /* drondown links */
+  .drop-content a {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgb(197, 197, 250);
+    display: block;
+    transition: all 0.5s ease;
+    color: white;
+    background-color:rgb(87, 177, 99);
+    text-decoration: 3px solid underline;
+ }
+ .drop-content a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+ }
+    
+
+.item1  li{
+    list-style: none;
+    display:flex;
+    padding: 1rem;;
+    margin: 0 15px;
+    color: white;
+
+
+}
+.item1 li a{
+    text-decoration: none;
+    color: white;
+}
+.item1 li a:hover{
+    color: rgb(87, 177, 99);
+}
+.hom{ 
+    border-radius: 10px;
+    background-color: rgb(87, 177, 99);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hom:hover{
+    color: rgb(123, 123, 196);
+    background-color: white;
+}
+.item2{
+    /* margin: 2rem; */
+   
+}
+.item2 li{
+    list-style: none;
+    display:flex;
+    padding: 1rem;;
+    color: white;
+    
+
+}
+.item2 li a{
+    text-decoration: none;
+    color: white;
+}
+.item2 li a:hover{
+    color: rgb(120, 36, 153);
+}
+
+input[type=button]{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius:20px ;
+    font-weight: 700;
+    cursor: pointer;
+    color: ; 
+}
+input[type=button]:hover{
+    background-color: rgb(87, 177, 99);
+    color: white;
+}
+#signin{
+    color:black;
+    width: 80px;
+    height: 35px;
+   border-radius: 0px;
+}
+#signin:hover{
+    color: white;
+}
+/* section2 */
+.grid-layout{
+
+    display: grid;
+    /* border: 3px solid white; */
+    height: 550px;
+    grid-template-columns: 60% 40%;
+    background-image: url(./images/pexels-anna-shvets-3727464.jpg );
+    background-size: contain;
+    /* position: fixed; */
+    margin: 110px 0;
+    width: 100%;
+    
+}
+.one{
+    /* background-color: brown; */
+    padding: 3rem;
+    /* background-image: url(./images/pexels-photo-5816291.jpeg); */
+    background-repeat: no-repeat;
+    /* margin: 91px 0; */
+    width: 100%;
+}
+.button-dummy{
+    width: 50px;
+    height: 15px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    margin: 35px 0px;
+  
+  
+}
+#text{
+    color:rgb(120, 36, 153);
+    text-align: center;
+}
+#text1{
+    color: white;
+}
+.two{
+    /* background-color: 0rgb(18, 18, 20); */
+    padding:3rem;
+    /* background-image: url(./images/pexels-photo-5816291.jpeg); */
+    /* margin: 91px 0; */
+   
+}
+
+.four-grid{
+    display: grid;
+    /* justify-content: center; */
+    align-content: center;
+   margin: -10px 0px;
+   text-align: center;
+    /* border:5px solid lightcoral; */
+    min-height:100vh;    
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(200px);
+}
+.four-grid a{
+    text-decoration: none;
+}
+.four-grid a:hover{
+    
+}
+
+#fast{
+    /* grid-row:span 2; */
+    height: 120px;
+    background-color: rgb(5, 138, 82);
+    height:100px;
+    font-size: 2rem;
+    border:5px solid white;
+    /* background-color: aqua; */
+    color:white;
+    /* cursor: pointer; */
+    outline: none;
+}
+#fast:hover{
+    background-color: white;
+    color: rgb(5, 138, 82);
+}
+#apply{
+    height: 120px;
+    font-size: 2rem;
+    border:1px solid white;
+    background-color: rgb(28, 6, 150);
+    height:100px;
+    color:white;
+    /* cursor: pointer; */
+    outline: none;
+}
+#apply:hover{
+    background-color: white;
+    color: rgb(28, 6, 150);
+}
+#afs{
+    
+    /* grid-row:span 2; */
+    height: 120px;
+font-size: 2rem;
+border:1px solid white;
+background-color: rgb(45, 54, 180);
+color:white;
+/* cursor: pointer; */
+outline: none;
+}
+#afs:hover{
+    background-color: white;
+    color: rgb(45, 54, 180);
+}
+#faqs{
+   
+    /* grid-row:span 2; */
+    height: 120px;
+font-size: 2rem;
+border:5px solid white;
+background-color: rgb(145, 7, 7);
+color:white;
+/* cursor: pointer; */
+outline:none;
+}
+#faqs:hover{
+    background-color: white;
+    color:rgb(145, 7, 7);
+}
+/* hamburger  */
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: .50rem; */
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(249, 249, 253);
+    border-radius: 5px;
+}
+@media( max-width:800px){
+  .toggle-button{
+      display:flex;
+      width: ;
+  }
+  .media{
+      flex-direction: column;
+      display:none;
+      width: 100%;
+  }
+
+}
+.media .active{
+      display: flex;
+}

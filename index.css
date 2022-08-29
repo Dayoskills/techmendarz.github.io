@@ -1,0 +1,251 @@
+*{ box-sizing: border-box;
+    /* margin: 0; */
+      /* padding: 0; */
+    }
+    
+body{
+      padding:0;
+      margin:0;
+      width:100%;
+      height: 150vh;
+      background-image:url(./images/bgimg2.webp);
+      z-index: -1;
+     
+  }
+
+  .navbar{
+    position:fixed;
+    /* top:-25px; */
+    width:100%;
+    height: 90px;
+    background-color:rgba(0, 0, 0, 0.4);
+    display:flex;
+    z-index: ;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    padding:0 20px;
+    margin:0 0px
+
+}
+.brand{
+    /* position:absolute; */
+    margin:.7rem;
+    
+   
+    
+}
+.navbar ul{
+    margin:0;
+    padding:0  0;
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    /* margin:0px 10px; */
+    padding: 1rem;
+}
+
+    
+
+.item1  li{
+    list-style: none;
+    display:flex;
+    padding: 1rem;;
+    margin: 0 15px;
+    color: white;
+
+
+}
+.item1 li a{
+    text-decoration: none;
+    color: white;
+}
+.item1 li a:hover{
+    color: rgb(5, 138, 82);
+}
+.hom{ 
+    border-radius: 10px;
+    background-color: rgb(5, 138, 82);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hom:hover{
+    color: rgb(123, 123, 196);
+    background-color: white;
+}
+.item2{
+    /* margin: 2rem; */
+   
+}
+.item2 li{
+    list-style: none;
+    display:flex;
+    padding: .2rem;;
+    color: white;
+    
+
+}
+.item2 li a{
+    text-decoration: none;
+    color: white;
+}
+.item2 li a:hover{
+    color: rgb(120, 36, 153);
+}
+
+input[type=button]{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius:20px ;
+    font-weight: 700;
+    cursor: pointer;
+    color: ; 
+}
+input[type=button]:hover{
+    background-color: rgb(87, 177, 99);
+    color: white;
+}
+#signin{
+    color:black;
+    width: 80px;
+    height: 35px;
+   border-radius: 0px;
+}
+#signin:hover{
+    color: white;
+}
+/* section2 */
+.grid-layout{
+
+    display: grid;
+    display: grid;
+    /* border: 3px solid white; */
+    height: 550px;
+    grid-template-columns: 60% 40%;
+    background-image: url(./images/pexels-anna-shvets-3727464.jpg );
+    background-size: contain;
+    position: fixed;
+    margin: 91px 0;
+    width: 100%;
+}
+.one{
+    /* background-color: brown; */
+    padding: 3rem;
+    /* background-image: url(./images/pexels-photo-5816291.jpeg); */
+    /* background-repeat: no-repeat; */
+   
+    /* margin: 91px 0; */
+    width: 100%;
+}
+.button-dummy{
+    width: 50px;
+    height: 15px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(123, 123, 196);
+    margin: 30px 0px;
+  
+}
+#text1{
+    color: white;
+}
+.two{
+    /* background-color: 0rgb(18, 18, 20); */
+    padding:3rem;
+    /* background-image: url(./images/pexels-photo-5816291.jpeg); */
+    /* margin: 91px 0; */
+}
+.four-grid{
+    display: grid;
+    /* justify-content: center; */
+    align-content: center;
+   margin: -10px;
+   text-align: center;
+    /* border:5px solid lightcoral; */
+    min-height:100vh;    
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(200px);
+}
+
+#fast{
+    /* grid-row:span 2; */
+    height: 120px;
+    background-color: rgb(5, 138, 82);
+    height:100px;
+    font-size: 2rem;
+    border:5px solid white;
+    /* background-color: aqua; */
+    color:white;
+    /* cursor: pointer; */
+    outline: none;
+}
+#apply{
+    height: 120px;
+    font-size: 2rem;
+    border:1px solid white;
+    background-color: rgb(28, 6, 150);
+    height:100px;
+    color:white;
+    /* cursor: pointer; */
+    outline: none;
+}
+#afs{
+    
+    /* grid-row:span 2; */
+    height: 120px;
+font-size: 2rem;
+border:1px solid white;
+background-color: rgb(45, 54, 180);
+color:white;
+/* cursor: pointer; */
+outline: none;
+}
+#faqs{
+    
+    /* grid-row:span 2; */
+    height: 120px;
+font-size: 2rem;
+border:5px solid white;
+background-color: rgb(145, 7, 7);
+color:white;
+/* cursor: pointer; */
+outline:none;
+}
+/* hamburger  */
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: .50rem; */
+    height: 30px;
+    width: 30px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(249, 249, 253);
+    border-radius: 5px;
+}
+@media( max-width:800px){
+  .toggle-button{
+      display:flex;
+      width: ;
+  }
+  .media{
+      flex-direction: column;
+      display:none;
+      width: 100%;
+  }
+
+}
+.media .active{
+      display: flex;
+}

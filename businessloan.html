@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./businessloan.css"> </head>
+
+<body>
+	<a href="#" class="toggle-button"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+	<div class="media">
+		<!-- media -->
+		<form method="">
+			<div class="container"> <a href="" class="arrow">&#8592;</a>
+				<h1 id="business-loan">Business Loan</h1>
+				<P>
+					<input type="text" name="Business Name" placeholder="Business name..">
+				</p>
+				<p>
+					<input type="text" name="Fullname" placeholder="Fullname">
+				</p>
+				<select id="bank" name="bank ">
+					<option value="" selected="selected">Business Segment</option>
+					<option value="Micro ">Micro </option>
+					<option value="small">Small </option>
+					<option value="Medium">Medium </option>
+					<option value=" Large">Large</option>
+				</select>
+				<p>
+					<textarea name="comments" placeholder="A short description of business activities " maxlength="500"></textarea>
+					</label>
+				</p>
+				<P>
+					<input type="text" name="outlets" placeholder="How many outlets do you have?">
+				</p>
+				<fieldset>
+					<legend class="legend">Does the business have it's own account?</legend>
+					<p>
+						<label>
+							<input type="radio" name="business-account" required value=""> Yes </label>
+					</p>
+					<p>
+						<label>
+							<input type="radio" name="business-account" required value="no"> No </label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend class="legend">Is your business registered?</legend>
+					<p>
+						<label>
+							<input type="radio" name="business-reg" required value=""> Yes </label>
+					</p>
+					<p>
+						<label>
+							<input type="radio" name="business-reg" required value="no"> No </label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend class="legend">Do you have Tax-Identification-Number(TIN)?</legend>
+					<p>
+						<label>
+							<input type="radio" name="TIN" required value=""> Yes </label>
+					</p>
+					<p>
+						<label>
+							<input type="radio" name="TIN" required value="no"> No </label>
+					</p>
+				</fieldset>
+				<br>
+				<p>
+					<a href="./businessloanupload.html">
+						<input type="submit" value="Next">
+					</a>
+				</p>
+			</div>
+		</form>
+		<!-- media -->
+	</div>
+	<script src="./businessloan.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./productincome.css"> </head>
+
+<body>
+	<a href="#" class="toggle-button">
+		<!-- hamburger --><span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+	<div class="media">
+		<!-- media -->
+		<div class="container">
+			<div class="topic-date">
+				<!-- topic/date -->
+				<h1>Product Income statement </h1>
+				<input type="date" /> </div>
+			<!-- topic/date -->
+			<div class="grid-layout">
+				<!-- layout-one/two -->
+				<div class="one">
+					<!-- first-side -->
+					<div class="revenue-cost">
+						<!-- revenue-cost -->
+						<div class="revenue">
+							<!--revenue-->
+							<p>
+								<label for="revenu" class="revenue">Revenue:</label>
+								<input type="text" type="number"  onkeyup="calculateBMI()" id="revenu" name="revenu " placeholder="NGN"> </p>
+						</div>
+						<!-- revenue" -->
+					
+						
+						<div class="Variable-expenses">
+							<!-- cost -->
+							<p>
+								<table>
+									<tr id="cos">
+										<th id="v-expenses">Variable Expenses </th>
+										<th id="naira">NGN</th>
+									</tr>
+									<tr>
+										<td>wages</td>
+										<td>
+											<input id="aa" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+										</td>
+									</tr>
+									<tr>
+										<td>commissions</td>
+										<td>
+											<input id="bb" type="number"  onkeyup="calculateBMI()"placeholder="Amount">
+										</td>
+									</tr>
+									<tr>
+										<td>Direct labor</td>
+										<td>
+											<input id="cc" type="number" min="0" onkeyup="calculateBMI()" placeholder="Amount">
+										</td>
+										<tr>
+											<td>Direct labor</td>
+											<td>
+												<input id="dd" type="number" min="0" onkeyup="calculateBMI()" placeholder="Amount">
+											</td>
+										</tr>
+										<tr>
+											<td>Direct labor</td>
+											<td>
+												<input id="ee" type="number" min="0" onkeyup="calculateBMI()"placeholder="Amount">
+											</td>
+										</tr>
+										<tr>
+											<td>Input Other Expenses </td>
+											<td>
+												<input id="ff" type="number" min="0" onkeyup="calculateBMI()"placeholder="Amount">
+											</td>
+											
+										</tr>
+										<tr>
+									<div class="cost-of-sales-sum">
+												<!-- cost-of-sales-sum -->
+												<td id="cost-sum"></td>
+												
+											</div>
+											<!-- cost-of-sales-sum -->
+						</div>
+						</tr>
+						</th>
+						</table>
+						<div class="total-cost-of-sales-sum">
+							<!-- total-cost-of-sales-sum -->
+							<P>
+								<label for="totalc" class="totalcost">Total Variable Expenses</label>
+								<input type ="number" min="0" onkeyup="calculateBMI()" id="totalc" name="totalc" placeholder="NGN 0.0" disabled>
+							</P>
+						</div>
+						<!-- total-cost-of-sales-sum -->
+						<P>
+							<label for="cm" class="cm">Contributions Margin </label>
+							<input type ="number"  id="cm" onkeyup="calculateBMI()" placeholder="NGN" disabled>
+						</P>
+					</div>
+					<!-- cost -->
+				</div>
+				<!-- revenue-cost  -->
+			</div>
+			<!-- first-side -->
+			<!-- second-side -->
+			<div class="two">
+				<!-- two -->
+				<div class="variable-expenses">
+					<!-- operating-cost -->
+					<table>
+						<!-- <div class="cost-of-operation"> -->
+						<tr class="fixed-expenses-head">
+							<th>Fixed Expenses </th>
+							<th id="naira">NGN</th>
+						</tr>
+						<tr>
+							<td>furnitures</td>
+							<td>
+								<input id="faa" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input id="fbb" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+						</tr>
+						<tr>
+							<td>land building</td>
+							<td>
+								<input id="fcc" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+							<tr>
+								<td>vehicles</td>
+								<td>
+									<input id="fdd" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+								</td>
+							</tr>
+							<tr>
+								<td>insurance</td>
+								<td>
+									<input id="fee" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+								</td>
+							</tr>
+							<tr>
+								<td>Other Fixed Expenses </td>
+								<td>
+									<input id="fff" type="number"  onkeyup="calculateBMI()" placeholder="Amount">
+								</td>
+							</tr>
+				</div>l
+				<!-- operating-cost -->
+				<tr>
+					<div class="fixed-expenses-sum">
+						<!-- operating-cost-sum -->
+						<td id="cost-sum"></td>
+					
+					</div>
+					<!-- operating-cost-sum -->
+				</tr>
+				</table>
+				<br>
+				<br>
+				<P>
+					<label for="totalco" class="total-operating-cost">Total Fixed Expenses =</label>
+					<input type ="number" min="0"  onkeyup="calculateBMI()" id="totalco" name="totalco" placeholder="NGN">
+				</P>
+				<p>
+					<label for="gp" class="gp">Net Profit /(Loss)</label>:
+					<input id="npl" type ="number" min="0"  onkeyup="calculateBMI()"  name="gp" placeholder="NGN"> </P>
+			</div>
+		</div>
+		<!-- two -->
+	</div>
+	<!--layout-one/two -->
+	</div>
+	<!-- container -->
+	<!-- media -->
+	</div>
+	<script src="./productionincome.js" async defer></script>
+
+
+	  
+	
+
+
+
+
+
+	  
+<input id = "w" type="hidden"  name="weight" size="4" onkeyup="calculateBMI()"> <br> 
+<input id = "hh" type="hidden" name="height" size="24" onkeyup="calculateBMI()"> <br><br>
+<input id = "r" type="hidden" name="BodyMassIndex" id="BodyMassIndex" size="24" disabled>   <br> 
+<input type="hidden" style="font-size: 8pt" value="Calculate" onClick="calculateBMI()" name="button">
+
+
+<script>
+  function calculateBMI() {
+
+  var wtStr =document.getElementById('w').value;
+  var htStr = document.getElementById('hh').value;
+  
+  var htSta =document.getElementById('aa').value;
+		var htStb = document.getElementById('bb').value;
+		var htStc = document.getElementById('cc').value;
+		var htStd = document.getElementById('dd').value;
+		var htSte = document.getElementById('ee').value;
+		var htStf = document.getElementById('ff').value;
+		var revenu = document.getElementById('revenu').value;
+		
+		var fhtSta =document.getElementById('faa').value;
+		var fhtStb = document.getElementById('fbb').value;
+		var fhtStc = document.getElementById('fcc').value;
+		var fhtStd = document.getElementById('fdd').value;
+		var fhtSte = document.getElementById('fee').value;
+		var fhtStf = document.getElementById('fff').value;
+
+  if (!htSta)
+  htSta = '0';
+  if (!htStb)
+  htStb = '0';
+  if (!htStc)
+  htStc = '0';
+  if (!htStd)
+  htStd = '0';
+  if (!htSte)
+  htSte = '0';
+  if (!htStf)
+  htStf = '0';
+
+  if (!fhtSta)
+  fhtSta = '0';
+  if (!fhtStb)
+  fhtStb = '0';
+  if (!fhtStc)
+  fhtStc = '0';
+  if (!fhtStd)
+  fhtStd = '0';
+  if (!fhtSte)
+  fhtSte = '0';
+  if (!fhtStf)
+  fhtStf = '0';
+
+    if (!revenu)
+	revenu = '0';
+
+  var weights = parseFloat(htSta);
+  var heights = parseFloat(htStb);
+  var hc = parseFloat(htStc);
+  var hd = parseFloat(htStd);
+  var he = parseFloat(htSte);
+  var hf = parseFloat(htStf);
+  var reve = parseFloat(revenu);
+
+  var totalc = weights + heights + hc + hd + he + hf ;
+  document.getElementById("totalc").value = totalc;
+
+  document.getElementById("cm").value = reve - totalc;
+
+
+  
+  var fweights = parseFloat(fhtSta);
+  var fheights = parseFloat(fhtStb);
+  var fhc = parseFloat(fhtStc);
+  var fhd = parseFloat(fhtStd);
+  var fhe = parseFloat(fhtSte);
+  var fhf = parseFloat(fhtStf);
+  var ftotalc = fweights + fheights + fhc + fhd + fhe + fhf ;
+  document.getElementById("totalco").value = ftotalc;
+  document.getElementById("npl").value = (reve - totalc) - ftotalc ;
+
+
+}
+</script>
+</body>
+
+</html>

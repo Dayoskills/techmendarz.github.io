@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./fullincome.css"> </head>
+
+<body>
+	<a href="#" class="toggle-button">
+		<!-- hamburger --><span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+	<div class="media">
+		<!-- media -->
+		<div class="container">
+			<div class="topic-date">
+				<!-- topic/date -->
+				<h1>Full Income statement </h1>
+				<input type="date" /> </div>
+			<!-- topic/date -->
+			<div class="grid-layout">
+				<!-- layout-one/two -->
+				<div class="one">
+					<!-- first-side -->
+					<div class="revenue-cost">
+						<!-- revenue-cost -->
+						<div class="revenue">
+							<!--revenue-->
+							<p>
+								<label for="revenue" class="revenue">Revenue:</label>
+								<input type="text"onkeyup="calculateBMI()" id="revenue" name="revenue " placeholder="NGN" /> </p>
+						</div>
+						<!-- revenue" -->
+						<div class="cost-of-sales">
+							<!-- cost -->
+							<p>
+								<table>
+									<tr id="cost">
+										<th id="cost">Cost of Sale</th>
+										<th id="naira">NGN</th>
+									</tr>
+									<tr>
+										<td>Direct labor</td>
+										<td>
+											<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+										</td>
+									</tr>
+									<tr>
+										<td>Direct labor</td>
+										<td>
+											<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+										</td>
+									</tr>
+									<tr>
+										<td>Direct labor</td>
+										<td>
+											<input type="tel" onkeyup="calculateBMI()"placeholder="Amount">
+										</td>
+										<tr>
+											<td>Direct labor</td>
+											<td>
+												<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+											</td>
+										</tr>
+										<tr>
+											<td>Direct labor</td>
+											<td>
+												<input type="tel"onkeyup="calculateBMI()"placeholder="Amount">
+											</td>
+										</tr>
+										<tr>
+											<td>Input Other Expenses </td>
+											<td>
+												<input type="tel"onkeyup="calculateBMI()"placeholder="Amount">
+											</td>
+										</tr>
+										<tr>
+											<div class="cost-of-sales-sum">
+												<!-- cost-of-sales-sum -->
+												<td id="cost-sum"></td>
+												<td>
+													<input type="tel" onkeyup="calculateBMI()"placeholder="Summation">
+												</td>
+											</div>
+											<!-- cost-of-sales-sum -->
+						</div>
+						</tr>
+						</th>
+						</table>
+						<div class="total-cost-of-sales-sum">
+							<!-- total-cost-of-sales-sum -->
+							<P>
+								<label for="totalcost" class="totalcost">Total Cost of Revenue =</label>
+								<input type="text" onkeyup="calculateBMI()"id="totalcost" name="totalcost" placeholder="NGN">
+							</P>
+						</div>
+						<!-- total-cost-of-sales-sum -->
+						<P>
+							<label for="gp" class="gp">Gross Profit/(Loss)</label>
+							<input type="text"onkeyup="calculateBMI()" id="gp" name="gp" placeholder="NGN">
+						</P>
+					</div>
+					<!-- cost -->
+				</div>
+				<!-- revenue-cost  -->
+			</div>
+			<!-- first-side -->
+			<!-- second-side -->
+			<div class="two">
+				<!-- two -->
+				<div class="operating-cost">
+					<!-- operating-cost -->
+					<table>
+						<!-- <div class="cost-of-operation"> -->
+						<tr class="operating-cost-head">
+							<th>OPERATING COSTS </th>
+							<th id="naira">NGN</th>
+						</tr>
+						<tr>
+							<td>Direct labor</td>
+							<td>
+								<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+						</tr>
+						<tr>
+							<td>Direct labor</td>
+							<td>
+								<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+						</tr>
+						<tr>
+							<td>Direct labor</td>
+							<td>
+								<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+							</td>
+							<tr>
+								<td>Direct labor</td>
+								<td>
+									<input type="tel" onkeyup="calculateBMI()"placeholder="Amount">
+								</td>
+							</tr>
+							<tr>
+								<td>Direct labor</td>
+								<td>
+									<input type="tel"onkeyup="calculateBMI()"placeholder="Amount">
+								</td>
+							</tr>
+							<tr>
+								<td>Other Expenses </td>
+								<td>
+									<input type="tel"onkeyup="calculateBMI()" placeholder="Amount">
+								</td>
+							</tr>
+				</div>
+				<!-- operating-cost -->
+				<tr>
+					<div class="operating-cost-sum">
+						<!-- operating-cost-sum -->
+						<td id="cost-sum"></td>
+						<td>
+							<input type="tel"onkeyup="calculateBMI()" placeholder="Summation">
+						</td>
+					</div>
+					<!-- operating-cost-sum -->
+				</tr>
+				</table>
+				<br>
+				<br>
+				<P>
+					<label for="totalcost" class="total-operating-cost">Total Operating Expenses =</label>
+					<input type="text"onkeyup="calculateBMI()" id="totalcost" name="totalcost" placeholder="NGN">
+				</P>
+				<p>
+					<label for="gp" class="gp">Net Profit /(Loss)</label>:
+					<input type="text" onkeyup="calculateBMI()"id="gp" name="gp" placeholder="NGN"> </P>
+			</div>
+		</div>
+		<!-- two             -->
+	</div>
+	<!--layout-one/two -->
+	</div>
+	<!-- container -->
+	<!-- media -->
+	</div>
+	<script src="./fullincome.js" async defer></script>
+</body>
+
+</html>
